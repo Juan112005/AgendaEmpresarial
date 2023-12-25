@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Agends extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'name',
+        'description',
+        'img',
+        'statuses_id',
+        'owner_id',
+    ];
+}

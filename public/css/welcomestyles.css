@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #08173B;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+body.show {
+  opacity: 1;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos de encabezado */
+header {
+  background-image: url("../img/welcome/fondo1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden; 
+  margin-bottom: 1%;
+  border-bottom: solid white 5px;
+}
+
+.iconn {
+  width: 20%;
+}
+
+/* Resto de estilos */
+.animate-header {
+  opacity: 0;
+  transform: translateX(20%); 
+  transition: transform 1s, opacity 3s;
+}
+
+.animate-header.show {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.auth-buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  margin-top: -20px; 
+}
+
+.login-button,
+.register-button {
+  font-family: 'Futura', sans-serif;
+  font-size: 18px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgb(223, 223, 223);
+  cursor: pointer;
+  transition: color 0.3s;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-button:hover,
+.register-button:hover {
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+}
+
+/* Estilos de sección */
+section {
+ 
+  background-color: #757575;
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-5px);
+}
+
+.gestionUsuarios {
+  background-image: url("../img/welcome/usershome.png");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  
+}
+
+#panelesPersonalizados {
+  background-image: url("../img/welcome/panelesicon.png");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+#GestiónTareasEficiente {
+  background-image: url("../img/welcome/tareasicon.png");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+
+#RecopilaciónComentarios {
+  background-image: url("../img/welcome/comentariosicon.png");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+#RecursosCapacitación {
+  background-image: url("../img/welcome/capacitacionicon.png");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilos de pie de página */
+footer {
+  background-image: url("../img/welcome/fondo1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  width: 100%;
+  border-top: solid white 5px;
+}
+.footer-box {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.copyright{
+  margin-right: 1%;
+  margin-top: 4%;
+  position: absolute;
+  right: 0;
+}
+.iconsocial1 {
+  position: absolute;
+  width: 2.5%;
+  right: 0;
+  margin-right: 2%;
+}
+.iconsocial2 {
+  position: absolute;
+  width: 2.5%;
+  right: 0;
+  margin-right: 8%;
+}
+.iconsocial3 {
+  position: absolute;
+  width: 2.5%;
+  right: 0;
+  margin-right: 14%;
+}
+.iconsocial4 {
+  position: absolute;
+  width: 2.5%;
+  right: 0;
+  margin-right: 20%;
+}
+.iconfooter {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+}
+
+.Titlefooter {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 1;
+  margin-left: 15.4%;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 20px; 
+  margin-left: 15%;
+}
+.link {
+  margin: 10px;
+}
+
+
+.button-container {
+  width: 100%; 
+  margin: 0 auto; 
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#Login:hover, #Register:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  header {
+      padding: 20px 0;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  section {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  footer {
+      padding: 10px 0;
+  }
+
+  #Login {
+      font-size: 16px;
+      padding: 10px 16px;
+  }
+  #Register {
+      font-size: 16px;
+      padding: 10px 16px;
+  }
+
+}
+
+
+.txthome{
+  width: 48%;
+}
